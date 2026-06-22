@@ -66,9 +66,9 @@ while (cavalo <= 1){
            continue;
         }
         printf(" CAVALO: CIMA \n");
-        printf("\n");
       }
       cavalo++; 
+      
  }
     return 0;
 }
