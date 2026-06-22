@@ -5,7 +5,10 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 // Nível Novato/Aventureiro - Movimentação das Peças (criado a logica de movimentação da peças com estruturas de repetições mais complexas)
 // Nível Mestre - Funções Recursivas e Loops Aninhados
+
 // Área das funções recursivas 
+
+//Função Recursiva da rainha
 void MoverRainha(int rainha) {
     if (rainha > 0){
         printf(" RAINHA: ESQUERDA \n");
@@ -13,14 +16,14 @@ void MoverRainha(int rainha) {
     }
 
 }
-
+// Função Recursiva da Torre
 void MoverTorre(int torre){
     if (torre > 0){
         printf(" TORRE: DIREITA \n");
         MoverTorre(torre - 1);
     }
 }
-
+// Função Recursiva do Bispo
 void MoverBispo(int bispo) {
     if (bispo > 0){
         printf(" BISPO: CIMA, DIREITA \n");
@@ -50,7 +53,8 @@ int main() {
     printf("\n");
 
 printf("\n");
-    // Nível Aventureiro - Movimentação do Cavalo
+
+// Implementação da Movimentação do Cavalo
 while (cavalo <= 1){
      for( int vertical = 1, direita = 0; vertical <= 3; vertical++){
           if (vertical > 2) {
@@ -62,6 +66,7 @@ while (cavalo <= 1){
            continue;
         }
         printf(" CAVALO: CIMA \n");
+        printf("\n");
       }
       cavalo++; 
  }
